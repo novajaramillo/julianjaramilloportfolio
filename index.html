@@ -12,51 +12,96 @@
         padding-left:30px;
         padding-right:30px;
       }
-      .header-text {
+      .header-title {
+        background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         font-size:350%;
         font-weight:bold;
       }
       .header-menu {
+        background-color:#1e5fce;
+        display:grid;
+        grid-template-columns:auto auto auto;
+        place-content:center;
+      }
+      .menu-home-button {
+        background-color:#1e5fce;
         color:white;
+        font-family:helvetica;
+        text-align:center;
+        border-left:2px solid white;
+        border-right:2px solid white;
+        transition-duration:0.3s;
+      }
+      .menu-home-button:hover {
+        backgroud-color:white;
+        color:#1e5fce;
+        cursor:none;
+      }
+      .menu-resume-button {
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        text-align:center;
+        border-left:2px solid white;
+        border-right:2px solid white;
+        transition-duration:0.3s;
+      }
+      .menu-resume-button:hover {
+        backgroud-color:white;
+        color:#1e5fce;
+        cursor:none;
+      }
+      .menu-projects-button {
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        text-align:center;
+        border-left:2px solid white;
+        border-right:2px solid white;
+        transition-duration:0.3s;
+      }
+      .menu-projects-button:hover {
+        backgroud-color:white;
+        color:#1e5fce;
+        cursor:none;
       }
       .home-page {
-        display:flex;
-        flex-direction:row;
-        align-self:center;
-        justify-content:space-evenly;
-        align-items:flex-start;
-        left-margin:100px;
-        right-margin:100px;
-        top-margin:50px;
-        bottom-margin:50px;
-        gap:30px;
         background-color:white;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+        padding:50px;
       }
       .profile-img-box {
-        flex:1;
-        align-self:center;
+        background-color:white;
       }
       .profile-textbox {
-        flex:1
+        background-color:white
       }
       .profile-textbox-text {
         color:#22103f;
         font-family:helvetica;
         font-size:100%;
-        justify-self:start;
-        align-self:center;
         text-align:justify;
       }
-      .projects-page {
+      .resume-page {
         background-color:#1e5fce;
+      }
+      .projects-page {
+        background-color:white;
       }
     </style>
   </head>
   <body>
      <header class="header">
-      <div class="header-text">Julián Jaramillo</div>
+      <div class="header-titile">Julián Jaramillo</div>
+       <div class="header-menu>
+         <button class="button menu-home-button" onclick="home-page">HOME</button>
+         <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
+         <button class="button menu-projects-button" onclick="projects-page">PROJECTS</button>
+       </div>
     </header>
     <div class="home-page">
       <div class="profile-img-box">
@@ -67,6 +112,9 @@
         I studied at the prestigious Animal Couture Institute in Saskatchewan and am currently based in Timbuktu.
         My sister is the coolest person I've ever met!
       </div>
+    </div>
+    <div class="resume-page">
+      fill this section
     </div>
     <div class="projects-page">
       fill this section
