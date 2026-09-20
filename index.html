@@ -3,7 +3,7 @@
   <head>
     <style>
       .header {
-        height:200px;
+        height:100px;
         background-color:#1e5fce;
         position:sticky;
         display:flex;
@@ -20,16 +20,20 @@
         font-weight:bold;
       }
       .header-menu {
+        height:50px;
         background-color:#1e5fce;
         display:grid;
         grid-template-columns:auto auto auto;
         place-content:center;
       }
       .menu-home-button {
+        height:50px;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
+        border-top:none;
+        border-bottom:none;
         border-left:2px solid white;
         border-right:2px solid white;
         transition-duration:0.3s;
@@ -40,10 +44,13 @@
         cursor:none;
       }
       .menu-resume-button {
+        height:50px;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
+        border-top:none;
+        border-bottom:none;
         border-left:2px solid white;
         border-right:2px solid white;
         transition-duration:0.3s;
@@ -54,10 +61,13 @@
         cursor:none;
       }
       .menu-projects-button {
+        height:50px;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
+        border-top:none;
+        border-bottom:none;
         border-left:2px solid white;
         border-right:2px solid white;
         transition-duration:0.3s;
@@ -68,6 +78,7 @@
         cursor:none;
       }
       .home-page {
+        height:500px;
         background-color:white;
         display:flex;
         justify-content:space-evenly;
@@ -75,9 +86,12 @@
         padding:50px;
       }
       .profile-img-box {
+        flex:1;
         background-color:white;
       }
       .profile-textbox {
+        flex:1;
+        height:240px;
         background-color:white
       }
       .profile-textbox-text {
@@ -87,25 +101,27 @@
         text-align:justify;
       }
       .resume-page {
+        height:500px;
         background-color:#1e5fce;
       }
       .projects-page {
+        height:500px;
         background-color:white;
       }
     </style>
   </head>
   <body>
      <header class="header">
-      <div class="header-titile">Julián Jaramillo</div>
-       <div class="header-menu>
-         <button class="button menu-home-button" onclick="home-page">HOME</button>
+      <div class="header-title">Julián Jaramillo</div>
+       <div class="header-menu">
+         <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
          <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
          <button class="button menu-projects-button" onclick="projects-page">PROJECTS</button>
        </div>
     </header>
     <div class="home-page">
       <div class="profile-img-box">
-        <img class="profile-img" src="juliantempphoto.jpg" width="99" height="132" alt="Profile photo of Julián">
+        <img class="profile-img" src="juliantempphoto.jpg" width="180" height="240" alt="Photo of Julián">
       </div>
       <div class="profile-textbox">
         Salutations! I have been passionately designing elephant tutus since I was a wee lad. 
