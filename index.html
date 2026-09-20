@@ -3,40 +3,39 @@
   <head>
     <style>
       .header {
-        height:100px;
+        height:100;
         background-color:#1e5fce;
         position:sticky;
         display:flex;
         justify-content:space-between;
         align-items:center;
-        padding-left:30px;
-        padding-right:30px;
+        padding-left:30;
+        padding-right:30;
       }
       .header-title {
-        background-color:#1e5fce;
         color:white;
         font-family:helvetica;
-        font-size:350%;
+        font-size:100%;
         font-weight:bold;
       }
       .header-menu {
-        height:50px;
+        height:50;
         background-color:#1e5fce;
         display:grid;
         grid-template-columns:auto auto auto;
         place-content:center;
       }
       .menu-home-button {
-        height:50px;
+        height:50;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
         border-top:none;
         border-bottom:none;
-        border-left:2px solid white;
-        border-right:2px solid white;
-        transition-duration:0.3s;
+        border-left:2 solid white;
+        border-right:2 solid white;
+        transition-duration:0.4s;
       }
       .menu-home-button:hover {
         backgroud-color:white;
@@ -44,15 +43,15 @@
         cursor:none;
       }
       .menu-resume-button {
-        height:50px;
+        height:50;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
         border-top:none;
         border-bottom:none;
-        border-left:2px solid white;
-        border-right:2px solid white;
+        border-left:2 solid white;
+        border-right:2 solid white;
         transition-duration:0.3s;
       }
       .menu-resume-button:hover {
@@ -61,15 +60,15 @@
         cursor:none;
       }
       .menu-projects-button {
-        height:50px;
+        height:50;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
         text-align:center;
         border-top:none;
         border-bottom:none;
-        border-left:2px solid white;
-        border-right:2px solid white;
+        border-left:2 solid white;
+        border-right:2 solid white;
         transition-duration:0.3s;
       }
       .menu-projects-button:hover {
@@ -78,21 +77,23 @@
         cursor:none;
       }
       .home-page {
-        height:500px;
+        height:500;
         background-color:white;
         display:flex;
         justify-content:space-evenly;
         align-items:center;
-        padding:50px;
+        padding:50;
       }
       .profile-img-box {
         flex:1;
         background-color:white;
+        margin:25;
       }
       .profile-textbox {
-        flex:1;
-        height:240px;
+        flex:2;
+        height:240;
         background-color:white
+        margin:25px;
       }
       .profile-textbox-text {
         color:#22103f;
@@ -101,12 +102,14 @@
         text-align:justify;
       }
       .resume-page {
-        height:500px;
+        height:500;
         background-color:#1e5fce;
+        color:white;
       }
       .projects-page {
-        height:500px;
+        height:500;
         background-color:white;
+        color:#1e5fce;
       }
     </style>
   </head>
@@ -114,7 +117,7 @@
      <header class="header">
       <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
+         <button class="button menu-home-button" onclick="home-page">RESUME</button>
          <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
          <button class="button menu-projects-button" onclick="projects-page">PROJECTS</button>
        </div>
@@ -130,7 +133,7 @@
       </div>
     </div>
     <div class="resume-page">
-      fill this section
+      <iframe src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" height="400" width="600" title="Promoting Agency in Environmental Relocation"></iframe>
     </div>
     <div class="projects-page">
       fill this section
