@@ -2,252 +2,271 @@
 <html>
   <head>
     <style>
-  .header {
-  height:12vh;
-  background-color:#1e5fce;
-  position:fixed;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.header-title {
-  height:inherit;
-  margin-left:10%;
-  margin-right:5%;
-  background-color:#1e5fce;
-  color:white;
-  font-size:8vh;
-  font-family:helvetica;
-}
-.header-menu {
-  height:inherit;
-  margin-left:5%;
-  margin-right:10%;
-  background-color:#1e5fce;
-  display:grid;
-  grid-template-columns:11vw 11vw 11vw;
-  place-content:center;
-}
-.menu-home-button {
-  height:inherit;
-  border-width: 0px 3px 0px 0px;
-  border-color:white;
-  padding:0vh 1vw;
-  background-color:#1e5fce;
-  color:white;
-  font-family:helvetica;
-  font-size:3vh;
-  text-align:center;
-  transition-duration:0.4s;
-}
-.menu-home-button:hover {
-  background-color:white;
-  color:#1e5fce;
-  cursor:none;
-}
-.menu-resume-button {
-  height:inherit;
-  border-width: 0px 3px 0px 0px;
-  border-color:white;
-  padding:0vh 1vw;
-  background-color:#1e5fce;
-  color:white;
-  font-family:helvetica;
-  font-size:3vh;
-  text-align:center;
-  transition-duration:0.4s;
-}
-.menu-resume-button:hover {
-  background-color:white;
-  color:#1e5fce;
-  cursor:none;
-}
-.menu-projects-button {
-  height:inherit;
-  border-width: 0px 3px 0px 0px;
-  border-color:white;
-  padding:0vh 1vw;
-  background-color:#1e5fce;
-  color:white;
-  font-family:helvetica;
-  font-size:3vh;
-  text-align:center;
-  transition-duration:0.4s;
-}
-.menu-projects-button:hover {
-  background-color:white;
-  color:#1e5fce;
-  cursor:none;
-}
-.home-page {
-  height:90vh;
-  background-color:white;
-  display:flex;
-  justify-content:space-evenly;
-  align-items:center;
-}
-.profile-img-box {
-  height:60vh;
-  width:30vw;
-  background-color:white;
-}
-.profile-img {
-  max-height:60vh;
-  max-width:30vh;
-  border-radius:10%;
-  object-fit:contain;
-  box-shadow:10vh -10vw #ffb042;
-}
-.profile-textbox {
-  height:45vh;
-  width:45vw;
-  background-color:white;
-  color:#22103f;
-  font-family:garamond;
-  font-size:5vh;
-  text-align:justify;
-}
+      .header {
+        height:12vh;
+        width:100vw;
+        background-color:#1e5fce;
+        color:white;
+        position:sticky;
+        top:0;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+      }
+      .header-title {
+        height:inherit;
+        margin-left:10%;
+        margin-right:5%;
+        font-size:8vh;
+        font-family:helvetica;
+      }
+      .header-menu {
+        height:inherit;
+        margin-left:5%;
+        margin-right:10%;
+        display:grid;
+        grid-template-columns:11vw 11vw 11vw;
+        place-content:center;
+      }
+      .menu-home-button {
+        height:inherit;
+        border-width: 0px 3px 0px 0px;
+        border-right-color:white;
+        padding:0vh 1vw;
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        font-size:3vh;
+        text-align:center;
+        transition-duration:0.4s;
+      }
+      .menu-home-button:hover {
+        background-color:white;
+        color:#1e5fce;
+        cursor:none;
+      }
+      .menu-resume-button {
+        height:inherit;
+        border-width: 0px 3px 0px 0px;
+        border-color:white;
+        padding:0vh 1vw;
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        font-size:3vh;
+        text-align:center;
+        transition-duration:0.4s;
+      }
+      .menu-resume-button:hover {
+        background-color:white;
+        color:#1e5fce;
+        cursor:none;
+      }
+      .menu-projects-button {
+        height:inherit;
+        border-width: 0px 3px 0px 0px;
+        border-color:white;
+        padding:0vh 1vw;
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        font-size:3vh;
+        text-align:center;
+        transition-duration:0.4s;
+      }
+      .menu-projects-button:hover {
+        background-color:white;
+        color:#1e5fce;
+        cursor:none;
+      }
+      .home-page {
+        height:90vh;
+        background-color:white;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+      }
+      .profile-img-box {
+        height:80vh;
+        width:40vw;
+        background-color:white;
+      }
+      .profile-img {
+        max-height:80vh;
+        max-width:40vh;
+        border-radius:10%;
+        object-fit:contain;
+        box-shadow:-5vw 5vh #ffb042;
+      }
+      .profile-textbox {
+        height:45vh;
+        width:45vw;
+        background-color:white;
+        color:#22103f;
+        font-family:garamond;
+        font-size:5vh;
+        text-align:justify;
+      }
       .white-to-blue-grad {
         background-image:linear-gradient(to-bottom, white, #1e5fce);
         background-size:100vw 12vh;
         background-repeat:no-repeat;
       }
-.resume-page {
-  height:90vh;
-  background-color:#1e5fce;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  align-items:center;
-}
-.resume-title {
-  background-color:#1e5fce;
-  color:white;
-  font-family:helvetica;
-  font-size:10vh;
-}
-.resume-iframe {
-  height:60%;
-  width:80%;
-}
+      .resume-page {
+        height:90vh;
+        background-color:#1e5fce;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+      }
+      .resume-title {
+        background-color:#1e5fce;
+        color:white;
+        font-family:helvetica;
+        font-size:10vh;
+      }
+      .resume-iframe {
+        height:60%;
+        width:80%;
+      }
       .blue-to-white-grad {
         background-image:linear-gradient(to-bottom, #1e5fce, white);
         background-size:100vw 12vh;
         background-repeat:no-repeat;
       }
-.projects-page-one {
-  height:90vh;
-  background-color:white;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-}
-.projects-title {
-  color:#22103f;
-  font-family:helvetica;
-  font-size:10vh;
-}
-.documents-description {
-  width:50vw;
-  color:#22103f;
-  margin:3vh 0vw;
-  font-family:garamond;
-  font-size:5vh;
-  text-align:justify;
-}
-.documents-box {
-  height:50vh;
-  width:100vw;
-  display:flex;
-  justify-content:space-evenly;
-  align-items:center;
-}
-.cdmx-box {
-  height:inherit;
-  width:40vw;
-  background-color:#ffb042;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  background-redius:10%;
-}
-.cdmx-img-box {
-  height:25vh;
-  width:38vw;
-}
-.cdmx-img {
-  max-height:25vh;
-  max-width:38vw;
-  object-fit:contain;
-  background-redius:10%;
-}
-.cdmx-description {
-  background-color:#ffb042;
-  color:white;
-  font-family:garamond;
-  font-size:5vh;
-  text-align:justify;
-}
-.maldives-box {
-  height:inherit;
-  width:40vw;
-  background-color:#ffb042;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  background-redius:10%;
-}
-.maldives-img-box {
-  height:25vh;
-  width:38vw;
-}
-.maldives-img {
-  max-height:25vh;
-  max-width:38vw;
-  object-fit:contain;
-  background-redius:10%;
-}
-.maldives-description {
-  background-color:#ffb042;
-  color:white;
-  font-family:garamond;
-  font-size:5vh;
-  text-align:justify;  
-}
+      .projects-page-one {
+        height:90vh;
+        background-color:white;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+      }
+      .projects-title {
+        color:#22103f;
+        font-family:helvetica;
+        font-size:10vh;
+        margin:3vh 0vw;
+      }
+      .documents-description {
+        width:50vw;
+        color:#22103f;
+        margin:3vh 0vw;
+        font-family:garamond;
+        font-size:5vh;
+        text-align:justify;
+      }
+      .documents-box {
+        height:50vh;
+        width:100vw;
+        margin:3vh 0vw;
+        display:flex;
+        justify-content:space-evenly;
+        align-items:center;
+      }
+      .cdmx-box {
+        height:inherit;
+        width:40vw;
+        background-color:#ffb042;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        border-radius:10%;
+      }
+      .cdmx-img-box {
+        height:25vh;
+        width:38vw;
+      }
+      .cdmx-img {
+        max-height:25vh;
+        max-width:38vw;
+        object-fit:contain;
+        border-radius:10%;
+      }
+      .cdmx-img:hover {
+        opacity:0.3;
+        transform:scale(1.1);
+      }
+      .cdmx-description {
+        width:38vw;
+        background-color:#ffb042;
+        color:white;
+        font-family:garamond;
+        font-size:5vh;
+        text-align:justify;
+      }
+      .maldives-box {
+        height:inherit;
+        width:40vw;
+        background-color:#ffb042;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        border-radius:10%;
+      }
+      .maldives-img-box {
+        height:25vh;
+        width:38vw;
+      }
+      .maldives-img {
+        max-height:25vh;
+        max-width:38vw;
+        object-fit:contain;
+        border-radius:10%;
+      }
+      maldives-img:hover {
+        opacity:0.3;
+        transform:scale(1.1);
+      }
+      .maldives-description {
+        width:38vw;
+        background-color:#ffb042;
+        color:white;
+        font-family:garamond;
+        font-size:5vh;
+        text-align:justify;  
+      }
       .white-to-blue-grad {
         background-image:linear-gradient(to-bottom, white, #1e5fce);
         background-size:100vw 12vh;
         background-repeat:no-repeat;
       }
-.projects-page-two {
-  height:90vh;
-  background-color:#1e5fce;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-evenly;
-  align-items:center;
-}
-.storymap-iframe {
-  height:60%;
-  width:80%;
-}
-.storymap-description {
-  color:white;
-  font-family:garamond;
-  font-size:5vh;
-}
+      .projects-page-two {
+        height:90vh;
+        background-color:#1e5fce;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        align-items:center;
+      }
+      .storymap-iframe {
+        height:60%;
+        width:80%;
+      }
+      .storymap-description {
+        width:50vw;
+        color:white;
+        font-family:garamond;
+        font-size:5vh;
+      }
       </style>
   </head>
   <body>
      <header class="header">
       <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <button class="button menu-home-button" onclick="window.location.href='#home-page'">HOME</button>
-         <button class="button menu-resume-button" onclick="window.location.href='#resume-page'">RESUME</button>
-         <button class="button menu-projects-button" onclick="window.location.href='#projects-page'">PROJECTS</button>
+         <a href="#home-page">
+           <button class="button menu-home-button">HOME</button>
+         </a>
+         <a href="#resume-page">
+           <button class="button menu-resume-button">RESUME</button>
+         </a>
+         <a href="#projects-page-one">
+           <button class="button menu-projects-button">PROJECTS</button>
+         </a>
        </div>
     </header>
     <div class="home-page">
@@ -260,10 +279,12 @@
         My sister is the coolest person I've ever met!
       </div>
     </div>
+    <div class"white-to-blue-grad"></div>
     <div class="resume-page">
       <div class="resume-title">RESUME</div>
       <iframe class="resume-iframe" src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" title="Julián's Resume"></iframe>
     </div>
+    <div class"blue-to-white-grad"></div>
     <div class="projects-page-one">
       <div class="projects-title">PROJECTS</div>
       <div class="projects-description">
@@ -272,7 +293,9 @@
       <div class="documents-box">
         <div class="cdmx-box">
           <div class="cdmx-img-box">
-            <img class="cdmx-img" src="cdmx-stock-photo.jpg" alt"Photo of CDMX. CLick to read document.">
+            <a href="Jaramillo Work Sample - CDMX Gentrification.pdf">
+              <img class="cdmx-img" src="cdmx-stock-photo.jpg" alt"Photo of CDMX. CLick to read document.">
+            </a>
           </div>
           <div class="cdmx-description">
             This is my policy brief addressing gentrification in Mexico City
@@ -280,7 +303,9 @@
         </div>
         <div class="maldives-box">
           <div class="maldives-img-box">
-            <img class="maldives-img" src="maldives-stock-photo.jpg" alt"Photo of Maldives. CLick to read document.">
+            <a href="Jaramillo Work Sample - Climate Adaptation in the Maldives.pdf">
+              <img class="maldives-img" src="maldives-stock-photo.jpg" alt"Photo of Maldives. CLick to read document.">
+            </a>
           </div>
           <div class="maldives-description">
             This is something about climate strategy in the Maldives
@@ -288,6 +313,7 @@
         </div>
       </div>
     </div>
+     <div class"white-to-blue-grad"></div>
     <div class="projects-page-two">
       <iframe class="storymap-iframe" src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" title="Promoting Agency in Environmental Relocation"></iframe>
       <div class="storymap-description">This is my project Identifying Suitable Affordable Housing Sites in Bogotá for People Affected by Environmental Risk</div>
