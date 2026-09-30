@@ -7,8 +7,9 @@
         width:100vw;
         background-color:#1e5fce;
         color:white;
-        position:sticky;
+        position:fixed;
         top:0;
+        left:0
         display:flex;
         justify-content:space-between;
         align-items:center;
@@ -29,7 +30,7 @@
         place-content:center;
       }
       .menu-home-button {
-        height:inherit;
+        height:12vh;
         border-width: 0px 3px 0px 0px;
         border-right-color:white;
         padding:0vh 1vw;
@@ -46,7 +47,7 @@
         cursor:none;
       }
       .menu-resume-button {
-        height:inherit;
+        height:12vh;
         border-width: 0px 3px 0px 0px;
         border-color:white;
         padding:0vh 1vw;
@@ -63,7 +64,7 @@
         cursor:none;
       }
       .menu-projects-button {
-        height:inherit;
+        height:12vh;
         border-width: 0px 3px 0px 0px;
         border-color:white;
         padding:0vh 1vw;
@@ -81,6 +82,7 @@
       }
       .home-page {
         height:90vh;
+        margin-top:10vh;
         background-color:white;
         display:flex;
         justify-content:space-evenly;
@@ -89,6 +91,7 @@
       .profile-img-box {
         height:80vh;
         width:40vw;
+        left-margin:2vw;
         background-color:white;
       }
       .profile-img {
@@ -96,7 +99,7 @@
         max-width:40vh;
         border-radius:10%;
         object-fit:contain;
-        box-shadow:-5vw 5vh #ffb042;
+        box-shadow:-2vw 2vh #ffb042;
       }
       .profile-textbox {
         height:45vh;
@@ -124,10 +127,10 @@
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
-        font-size:10vh;
+        font-size:8vh;
       }
       .resume-iframe {
-        height:60%;
+        height:70%;
         width:80%;
       }
       .blue-to-white-grad {
@@ -146,11 +149,11 @@
       .projects-title {
         color:#22103f;
         font-family:helvetica;
-        font-size:10vh;
+        font-size:8vh;
         margin:3vh 0vw;
       }
       .documents-description {
-        width:50vw;
+        width:80vw;
         color:#22103f;
         margin:3vh 0vw;
         font-family:garamond;
@@ -178,6 +181,9 @@
       .cdmx-img-box {
         height:25vh;
         width:38vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
       }
       .cdmx-img {
         max-height:25vh;
@@ -195,7 +201,7 @@
         color:white;
         font-family:garamond;
         font-size:5vh;
-        text-align:justify;
+        text-align:center;
       }
       .maldives-box {
         height:inherit;
@@ -210,6 +216,9 @@
       .maldives-img-box {
         height:25vh;
         width:38vw;
+        display:flex;
+        justify-content:center;
+        align-items:center;
       }
       .maldives-img {
         max-height:25vh;
@@ -227,7 +236,7 @@
         color:white;
         font-family:garamond;
         font-size:5vh;
-        text-align:justify;  
+        text-align:center;  
       }
       .white-to-blue-grad {
         background-image:linear-gradient(to-bottom, white, #1e5fce);
@@ -243,11 +252,11 @@
         align-items:center;
       }
       .storymap-iframe {
-        height:60%;
+        height:70%;
         width:80%;
       }
       .storymap-description {
-        width:50vw;
+        width:80vw;
         color:white;
         font-family:garamond;
         font-size:5vh;
@@ -258,15 +267,9 @@
      <header class="header">
       <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <a href="#home-page">
-           <button class="button menu-home-button">HOME</button>
-         </a>
-         <a href="#resume-page">
-           <button class="button menu-resume-button">RESUME</button>
-         </a>
-         <a href="#projects-page-one">
-           <button class="button menu-projects-button">PROJECTS</button>
-         </a>
+         <button class="button menu-home-button" onClick="document.getElementById('home-page').scrollIntoView();">HOME</button>
+         <button class="button menu-resume-button" onClick="document.getElementById('resume-page').scrollIntoView();">RESUME</button>
+         <button class="button menu-projects-button" onClick="document.getElementById('projects-page-one').scrollIntoView();">PROJECTS</button>
        </div>
     </header>
     <div class="home-page">
@@ -279,12 +282,12 @@
         My sister is the coolest person I've ever met!
       </div>
     </div>
-    <div class"white-to-blue-grad"></div>
+    <div class="white-to-blue-grad"></div>
     <div class="resume-page">
       <div class="resume-title">RESUME</div>
       <iframe class="resume-iframe" src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" title="Julián's Resume"></iframe>
     </div>
-    <div class"blue-to-white-grad"></div>
+    <div class="blue-to-white-grad"></div>
     <div class="projects-page-one">
       <div class="projects-title">PROJECTS</div>
       <div class="projects-description">
@@ -313,7 +316,7 @@
         </div>
       </div>
     </div>
-     <div class"white-to-blue-grad"></div>
+     <div class="white-to-blue-grad"></div>
     <div class="projects-page-two">
       <iframe class="storymap-iframe" src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" title="Promoting Agency in Environmental Relocation"></iframe>
       <div class="storymap-description">This is my project Identifying Suitable Affordable Housing Sites in Bogotá for People Affected by Environmental Risk</div>
