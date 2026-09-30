@@ -1,7 +1,217 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./style.css" >
+    <style>
+  .header {
+  height:18vh;
+  background-color:#1e5fce;
+  position:sticky;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.header-title {
+  height:inherit;
+  padding-left:5%;
+  padding-right:5%;
+  background-color:#1e5fce;
+  color:white;
+  font-size:16vh;
+  font-family:helvetica;
+}
+.header-menu {
+  height:inherit;
+  padding-left:5%;
+  padding-right:5%;
+  background-color:#1e5fce;
+  display:grid;
+  grid-template-columns:auto auto auto;
+  place-content:center;
+}
+.menu-home-button {
+  height:inherit;
+  border-width: 0px 3px 0px 0px;
+  border-color:white;
+  padding:5%;
+  background-color:#1e5fce;
+  color:white;
+  font-family:helvetica;
+  font-size:14vh;
+  text-align:center;
+  transition-duration:0.4s;
+}
+.menu-home-button:hover {
+  background-color:white;
+  color:#1e5fce;
+  cursor:none;
+}
+.menu-resume-button {
+  height:inherit;
+  border-width: 0px 3px 0px 0px;
+  border-color:white;
+  padding:5%;
+  background-color:#1e5fce;
+  color:white;
+  font-family:helvetica;
+  font-size:14vh;
+  text-align:center;
+  transition-duration:0.4s;
+}
+.menu-resume-button:hover {
+  background-color:white;
+  color:#1e5fce;
+  cursor:none;
+}
+.menu-projects-button {
+  height:inherit;
+  border-width: 0px 3px 0px 0px;
+  border-color:white;
+  padding:5%;
+  background-color:#1e5fce;
+  color:white;
+  font-family:helvetica;
+  font-size:14vh;
+  text-align:center;
+  transition-duration:0.4s;
+}
+.menu-projects-button:hover {
+  background-color:white;
+  color:#1e5fce;
+  cursor:none;
+}
+.home-page {
+  height:90vh;
+  background-color:white;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.profile-img-box {
+  height:50%;
+  width:25vw;
+  background-color:white;
+}
+.profile-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
+.profile-textbox {
+  height:50%;
+  width:50vw;
+  background-color:white;
+  color:#22103f;
+  font-family:garamond;
+  font-size:14vh;
+  text-align:justify;
+}
+.resume-page {
+  height:90vh;
+  background-color:#1e5fce;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.resume-title {
+  background-color:#1e5fce;
+  color:white;
+  font-family:helvetica;
+  font-size:16vh;
+}
+.resume-iframe {
+  height:50%;
+  width:80%;
+}
+.projects-page-one {
+  height:90vh;
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.projects-title {
+  color:#22103f;
+  font-family:helvetica;
+  font-size:16vh;
+}
+.documents-description {
+  color:#22103f;
+  font-family:garamond;
+  font-size:14vh;
+}
+.documents-box {
+  height:50%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+.cdmx-box {
+  height:inherit;
+  width:30vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.cdmx-img-box {
+  width:inherit;
+  max-height:50%;
+}
+.cdmx-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
+.cdmx-description {
+  background-color:#1e5fce;
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
+  text-align:justify;
+}
+.maldives-box {
+  height:inherit;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.maldives-img-box {
+  width:inherit;
+  max-height:50%;  
+}
+.maldives-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
+.maldives-description {
+  background-color:#1e5fce;
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
+  text-align:justify;  
+}
+.projects-page-two {
+  height:90vh;
+  background-color:#1e5fce;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.storymap-iframe {
+  height:50%;
+  width:80%;
+}
+.storymap-description {
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
+}
+      </style>
   </head>
   <body>
      <header class="header">
