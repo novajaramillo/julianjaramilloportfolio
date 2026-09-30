@@ -1,5 +1,5 @@
 header {
-  height:10vh;
+  height:18vh;
   background-color:#1e5fce;
   position:sticky;
   display:flex;
@@ -12,7 +12,7 @@ header-title {
   padding-right:5%;
   background-color:#1e5fce;
   color:white;
-  font-size:80%;
+  font-size:16vh;
   font-family:helvetica;
 }
 header-menu {
@@ -32,7 +32,7 @@ menu-home-button {
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:80%;
+  font-size:14vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -49,7 +49,7 @@ menu-resume-button {
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:80%;
+  font-size:14vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -66,7 +66,7 @@ menu-projects-button {
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:80%;
+  font-size:14vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -83,28 +83,127 @@ home-page {
   align-items:center;
 }
 profile-img-box {
-  flex:1;
   height:50%;
-  width:30%;
+  width:25vw;
   background-color:white;
 }
+profile-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
 profile-textbox {
-  flex:2;
   height:50%;
-  width:60%;
-  background-color:white
+  width:50vw;
+  background-color:white;
   color:#22103f;
-  font-family:helvetica;
-  font-size:100%;
+  font-family:garamond;
+  font-size:14vh;
   text-align:justify;
 }
 resume-page {
   height:90vh;
   background-color:#1e5fce;
-  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
-projects-page {
+resume-title {
+  background-color:#1e5fce;
+  color:white;
+  font-family:helvetica;
+  font-size:16vh;
+}
+resume-iframe {
+  height:50%;
+  width:80%;
+}
+projects-page-one {
   height:90vh;
   background-color:white;
-  color:#1e5fce;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  align-items:center;
+}
+projects-title {
+  color:#22103f;
+  font-family:helvetica;
+  font-size:16vh;
+}
+documents-description {
+  color:#22103f;
+  font-family:garamond;
+  font-size:14vh;
+}
+documents-box {
+  height:50%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+cdmx-box {
+  height:inherit;
+  width:30vw;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+cdmx-img-box {
+  width:inherit;
+  max-height:50%;
+}
+cdmx-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
+cdmx-description {
+  background-color:#1e5fce;
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
+  text-align:justify;
+}
+maldives-box {
+  height:inherit;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+maldives-img-box {
+  width:inherit;
+  max-height:50%;  
+}
+maldives-img {
+  display:block;
+  margin:auto;
+  object-fit:contain;
+}
+maldives-description {
+  background-color:#1e5fce;
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
+  text-align:justify;  
+}
+projects-page-two {
+  height:90vh;
+  background-color:#1e5fce;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+storymap-iframe {
+  height:50%;
+  width:80%;
+}
+storymap-description {
+  color:white;
+  font-family:garamond;
+  font-size:14vh;
 }
