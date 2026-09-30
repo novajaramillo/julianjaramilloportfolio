@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" >
   </head>
   <body>
      <header class="header">
-      <!--<div class="header-title">Julián Jaramillo</div>
+      <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <button class="button menu-home-button" onclick="home-page">HOME</button>
-         <button class="button menu-resume-button" onclick="resume-page">RESUME</button>
-         <button class="button menu-projects-button" onclick="projects-page">PROJECTS</button>
+         <button class="button menu-home-button" onclick="window.location.href='#home-page'">HOME</button>
+         <button class="button menu-resume-button" onclick="window.location.href='#resume-page'">RESUME</button>
+         <button class="button menu-projects-button" onclick="window.location.href='#projects-page'">PROJECTS</button>
        </div>
     </header>
     <div class="home-page">
       <div class="profile-img-box">
-        <img class="profile-img" src="juliantempphoto.jpg" width="180" height="240" alt="Photo of Julián">
+        <img class="profile-img" src="juliantempphoto.jpg" alt="Photo of Julián">
       </div>
       <div class="profile-textbox">
         Salutations! I have been passionately designing elephant tutus since I was a wee lad. 
@@ -23,15 +23,20 @@
       </div>
     </div>
     <div class="resume-page">
-      <iframe src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" height="400" width="600" title="Julián's Resume"></iframe>
+      <iframe class="resume-iframe" src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" title="Julián's Resume"></iframe>
     </div>
     <div class="projects-page">
       <div class="storymap-section">
-        <iframe src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" height="400" width="600" title="Promoting Agency in Environmental Relocation"></iframe>
+        <iframe class="storymap-iframe" src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" title="Promoting Agency in Environmental Relocation"></iframe>
       </div>
-      <div class="documents-section">
-        fill this section
-      </div> -->
+      <div class="work-sample-section">
+        <div class="cdmx-box">
+          <!--<img class="cdmx-img" src="" alt="Photo of CDMX. Click to read document">-->
+        </div>
+        <div class="maldives-box">
+          <!--<img class="maldives-img" src="" alt="Photo of Maldives. Click to read document">-->
+        </div>
+      </div> 
     </div>
   </body>
 </html>
