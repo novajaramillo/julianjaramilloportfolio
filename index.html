@@ -3,17 +3,17 @@
   <head>
     <style>
   .header {
-  height:10vh;
+  height:12vh;
   background-color:#1e5fce;
-  position:sticky;
+  position:fixed;
   display:flex;
   justify-content:space-between;
   align-items:center;
 }
 .header-title {
   height:inherit;
-  padding-left:5%;
-  padding-right:5%;
+  margin-left:10%;
+  margin-right:5%;
   background-color:#1e5fce;
   color:white;
   font-size:8vh;
@@ -21,22 +21,22 @@
 }
 .header-menu {
   height:inherit;
-  padding-left:5%;
-  padding-right:5%;
+  margin-left:5%;
+  margin-right:10%;
   background-color:#1e5fce;
   display:grid;
-  grid-template-columns:auto auto auto;
+  grid-template-columns:11vw 11vw 11vw;
   place-content:center;
 }
 .menu-home-button {
   height:inherit;
   border-width: 0px 3px 0px 0px;
   border-color:white;
-  padding:5%;
+  padding:0vh 1vw;
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:5vh;
+  font-size:3vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -49,11 +49,11 @@
   height:inherit;
   border-width: 0px 3px 0px 0px;
   border-color:white;
-  padding:5%;
+  padding:0vh 1vw;
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:5vh;
+  font-size:3vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -66,11 +66,11 @@
   height:inherit;
   border-width: 0px 3px 0px 0px;
   border-color:white;
-  padding:5%;
+  padding:0vh 1vw;
   background-color:#1e5fce;
   color:white;
   font-family:helvetica;
-  font-size:5vh;
+  font-size:3vh;
   text-align:center;
   transition-duration:0.4s;
 }
@@ -87,30 +87,37 @@
   align-items:center;
 }
 .profile-img-box {
-  height:45vh;
-  width:25vw;
+  height:60vh;
+  width:30vw;
   background-color:white;
 }
 .profile-img {
-  max-height:45vh;
-  max-width:25vh;
+  max-height:60vh;
+  max-width:30vh;
+  border-radius:10%;
   object-fit:contain;
+  box-shadow:10vh -10vw #ffb042;
 }
 .profile-textbox {
   height:45vh;
-  width:50vw;
+  width:45vw;
   background-color:white;
   color:#22103f;
   font-family:garamond;
   font-size:5vh;
   text-align:justify;
 }
+      .white-to-blue-grad {
+        background-image:linear-gradient(to-bottom, white, #1e5fce);
+        background-size:100vw 12vh;
+        background-repeat:no-repeat;
+      }
 .resume-page {
   height:90vh;
   background-color:#1e5fce;
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:space-evenly;
   align-items:center;
 }
 .resume-title {
@@ -120,15 +127,20 @@
   font-size:10vh;
 }
 .resume-iframe {
-  height:50%;
+  height:60%;
   width:80%;
 }
+      .blue-to-white-grad {
+        background-image:linear-gradient(to-bottom, #1e5fce, white);
+        background-size:100vw 12vh;
+        background-repeat:no-repeat;
+      }
 .projects-page-one {
   height:90vh;
   background-color:white;
   display:flex;
   flex-direction:column;
-  justify-content:space-evenly;
+  justify-content:center;
   align-items:center;
 }
 .projects-title {
@@ -137,35 +149,42 @@
   font-size:10vh;
 }
 .documents-description {
+  width:50vw;
   color:#22103f;
+  margin:3vh 0vw;
   font-family:garamond;
   font-size:5vh;
+  text-align:justify;
 }
 .documents-box {
-  height:45vh;
+  height:50vh;
+  width:100vw;
   display:flex;
   justify-content:space-evenly;
   align-items:center;
 }
 .cdmx-box {
   height:inherit;
-  width:30vw;
+  width:40vw;
+  background-color:#ffb042;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  background-redius:10%;
 }
 .cdmx-img-box {
   height:25vh;
-  width:28vw;
+  width:38vw;
 }
 .cdmx-img {
-  max-height:100%;
-  max-width:28vw;
+  max-height:25vh;
+  max-width:38vw;
   object-fit:contain;
+  background-redius:10%;
 }
 .cdmx-description {
-  background-color:#1e5fce;
+  background-color:#ffb042;
   color:white;
   font-family:garamond;
   font-size:5vh;
@@ -173,38 +192,46 @@
 }
 .maldives-box {
   height:inherit;
-  width:30vw;
+  width:40vw;
+  background-color:#ffb042;
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  background-redius:10%;
 }
 .maldives-img-box {
   height:25vh;
-  width:28vw;
+  width:38vw;
 }
 .maldives-img {
-  max-height:100%;
-  width:28vw;
+  max-height:25vh;
+  max-width:38vw;
   object-fit:contain;
+  background-redius:10%;
 }
 .maldives-description {
-  background-color:#1e5fce;
+  background-color:#ffb042;
   color:white;
   font-family:garamond;
   font-size:5vh;
   text-align:justify;  
 }
+      .white-to-blue-grad {
+        background-image:linear-gradient(to-bottom, white, #1e5fce);
+        background-size:100vw 12vh;
+        background-repeat:no-repeat;
+      }
 .projects-page-two {
   height:90vh;
   background-color:#1e5fce;
   display:flex;
   flex-direction:column;
-  justify-content:center;
+  justify-content:space-evenly;
   align-items:center;
 }
 .storymap-iframe {
-  height:50%;
+  height:60%;
   width:80%;
 }
 .storymap-description {
@@ -234,11 +261,11 @@
       </div>
     </div>
     <div class="resume-page">
-      <div class="resume-title">Resume</div>
+      <div class="resume-title">RESUME</div>
       <iframe class="resume-iframe" src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" title="Julián's Resume"></iframe>
     </div>
     <div class="projects-page-one">
-      <div class="projects-title">Projects</div>
+      <div class="projects-title">PROJECTS</div>
       <div class="projects-description">
         I can't think of a good description right now. This is my work. I like to travel for work. Click on the image to read the document. Bottom Text.
       </div>
