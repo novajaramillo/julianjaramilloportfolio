@@ -31,12 +31,14 @@
         place-content:center;
       }
       .menu-home-button {
+        display:inline-block;
         height:12vh;
         border-width: 0px 3px 0px 0px;
         padding:0vh 1vw;
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
+        text-decoration:none;
         font-size:3vh;
         text-align:center;
         transition-duration:0.4s;
@@ -47,6 +49,7 @@
         cursor:none;
       }
       .menu-resume-button {
+        display:inline-block;
         height:12vh;
         border-width: 0px 3px 0px 0px;
         border-color:white;
@@ -54,6 +57,7 @@
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
+        text-decoration:none;
         font-size:3vh;
         text-align:center;
         transition-duration:0.4s;
@@ -64,6 +68,7 @@
         cursor:none;
       }
       .menu-projects-button {
+        display:inline-block;
         height:12vh;
         border-width: 0px 3px 0px 0px;
         border-color:white;
@@ -71,6 +76,7 @@
         background-color:#1e5fce;
         color:white;
         font-family:helvetica;
+        text-decoration:none;
         font-size:3vh;
         text-align:center;
         transition-duration:0.4s;
@@ -80,7 +86,7 @@
         color:#1e5fce;
         cursor:none;
       }
-      .home-page {
+      #home-page {
         height:90vh;
         margin-top:12vh;
         background-color:white;
@@ -119,7 +125,7 @@
         background-size:100vw 12vh;
         background-repeat:no-repeat;
       }
-      .resume-page {
+      #resume-page {
         height:90vh;
         background-color:#1e5fce;
         display:flex;
@@ -142,7 +148,7 @@
         background-size:100vw 12vh;
         background-repeat:no-repeat;
       }
-      .projects-page-one {
+      #projects-page-one {
         height:90vh;
         background-color:white;
         display:flex;
@@ -271,12 +277,12 @@
      <header class="header">
       <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <a class="menu-home-button" href=".home-page">HOME</a>
-         <a class="menu-resume-button" href=".resume-page">RESUME</a>
-         <a class="menu-projects-button" href=".projects-page-one">PROJECTS</a>
+         <a class="menu-home-button" href="#home-page">HOME</a>
+         <a class="menu-resume-button" href="#resume-page">RESUME</a>
+         <a class="menu-projects-button" href="#projects-page-one">PROJECTS</a>
        </div>
     </header>
-    <div class="home-page">
+    <div id="home-page">
       <div class="profile-img-box">
         <img class="profile-img" src="juliantempphoto.jpg" alt="Photo of Julián">
       </div>
@@ -287,12 +293,12 @@
       </div>
     </div>
     <div class="white-to-blue-grad"></div>
-    <div class="resume-page">
+    <div id="resume-page">
       <div class="resume-title">RESUME</div>
       <iframe class="resume-iframe" src="https://docs.google.com/document/d/1-nDLbl2jetr-Hvn0EP85hxxoM8AryfOp9fMqK1CXRuQ/edit?usp=drivesdk" title="Julián's Resume"></iframe>
     </div>
     <div class="blue-to-white-grad"></div>
-    <div class="projects-page-one">
+    <div id="projects-page-one">
       <div class="projects-title">PROJECTS</div>
       <div class="projects-description">
         I can't think of a good description right now. This is my work. I like to travel for work. Click on the image to read the document. Bottom Text.
