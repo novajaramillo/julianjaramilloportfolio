@@ -19,6 +19,9 @@
         margin-left:10%;
         font-size:8vh;
         font-family:helvetica;
+        display:flex;
+        justify-content:center;
+        align-items:center;
       }
       .header-menu {
         height:inherit;
@@ -86,7 +89,7 @@
         align-items:center;
       }
       .profile-img-box {
-        height:80vh;
+        height:70vh;
         width:40vw;
         margin-left:10vw;
         background-color:white;
@@ -95,7 +98,7 @@
         align-items:center;
       }
       .profile-img {
-        max-height:80vh;
+        max-height:70vh;
         max-width:40vw;
         border-radius:10%;
         object-fit:contain;
@@ -227,7 +230,7 @@
         object-fit:contain;
         border-radius:10%;
       }
-      maldives-img:hover {
+      .maldives-img:hover {
         opacity:0.3;
         transform:scale(1.1);
       }
@@ -268,9 +271,9 @@
      <header class="header">
       <div class="header-title">Julián Jaramillo</div>
        <div class="header-menu">
-         <button class="button menu-home-button" onClick="document.getElementById('home-page').scrollIntoView();">HOME</button>
-         <button class="button menu-resume-button" onClick="document.getElementById('resume-page').scrollIntoView();">RESUME</button>
-         <button class="button menu-projects-button" onClick="document.getElementById('projects-page-one').scrollIntoView();">PROJECTS</button>
+         <a class="button menu-home-button" href=".home-page">HOME</a>
+         <a class="button menu-resume-button" href=".resume-page">RESUME</a>
+         <a class="button menu-projects-button" href=".projects-page-one">PROJECTS</a>
        </div>
     </header>
     <div class="home-page">
@@ -317,7 +320,7 @@
         </div>
       </div>
     </div>
-     <div class="white-to-blue-grad">test</div>
+     <div class="white-to-blue-grad"></div>
     <div class="projects-page-two">
       <iframe class="storymap-iframe" src="https://storymaps.arcgis.com/stories/b0413edf963d47e19b96d0b29df72869" title="Promoting Agency in Environmental Relocation"></iframe>
       <div class="storymap-description">This is my project Identifying Suitable Affordable Housing Sites in Bogotá for People Affected by Environmental Risk</div>
